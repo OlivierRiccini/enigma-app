@@ -1,0 +1,22 @@
+{
+  "name": "enigma-app",
+  "version": "1.0.0",
+  "description": "App coding and decoding messages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlivierRiccini/enigma-app.git"
+  },
+  "author": "Olivier Riccini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlivierRiccini/enigma-app/issues"
+  },
+  "homepage": "https://github.com/OlivierRiccini/enigma-app#readme",
+  "dependencies": {
+    "yargs": "^12.0.2"
+  }
+}
