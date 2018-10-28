@@ -26,7 +26,6 @@ const message = argv.message;
 
 if (command === 'code') {
   const codedMessage = coder.messageCoder(message);
-  DB.push(codedMessage);
   console.log('Your message has been crypted like this:');
   console.log(codedMessage.codedMessage);
 } else if (command === 'decode') {
