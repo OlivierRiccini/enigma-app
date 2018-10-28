@@ -1,7 +1,6 @@
 const yargs = require('yargs');
 
-const coder = require('./coder/coder');
-const decoder = require('./decoder/decoder');
+const messageController = require('./message/message');
 
 const messageOptions = {
   demand: true,
@@ -25,11 +24,11 @@ const command = argv._[0];
 const message = argv.message;
 
 if (command === 'code') {
-  const codedMessage = coder.messageCoder(message);
+  const codedMessage = messageController.messageCoder(message);
   console.log('Your message has been crypted like this:');
   console.log(codedMessage.codedMessage);
 } else if (command === 'decode') {
-  const decodedMessage = decoder.messageDecoder(message);
+  const decodedMessage = messageController.messageDecoder(message);
   if (decodedMessage) {
     console.log('Your message has been decoded succesfully!');
     console.log(decodedMessage);
